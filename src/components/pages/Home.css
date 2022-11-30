@@ -62,7 +62,6 @@
     position: relative;
   }
   .picture11{
-    display: flex;
     height:32rem;
     width:25rem;
   }
@@ -71,7 +70,6 @@
     width: 45rem;
   }
   .Apicture12 {
-    display: flex;
     height: 32rem;
     width: 65rem;
   }
