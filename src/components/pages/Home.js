@@ -1,8 +1,15 @@
 import React from 'react';
+import {useEffect} from 'react';
 import './Home.css';
 
 
 function Home() {
+    useEffect(() => {
+        document.getElementById('vid').play();
+      }, []);
+      
+      
+    
   return (
     <>
           <hr style={{ background: 'black', color: 'black', borderColor: 'black', margin:0 }} />
@@ -40,8 +47,14 @@ function Home() {
             <section className="video">
               <div className="vidt">
                   <div className="left1">
-                      <img src="/images/box designs.jpg" alt="" className="picture14"></img>
-                      <button className="picture15"></button>
+                  <video id = 'vid'className='picture14'playsinline autoplay muted loop onloadedmetadata="this.muted = true">
+                    <source src="/videos/video-1.mp4" type="video/mp4"/>
+                
+                </video>
+                
+                    
+
+                
 
                   </div>
                   <div className="right1">
@@ -121,6 +134,7 @@ function Home() {
 
                 
     </>
+    
   );
 }
 
