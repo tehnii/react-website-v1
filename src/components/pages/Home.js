@@ -4,9 +4,14 @@ import './Home.css';
 
 
 function Home() {
-    useEffect(() => {
+    /*useEffect(() => {
         document.getElementById('vid').play();
-      }, []);
+      }, []);*/
+
+      /*<video id = 'vid'className='picture14'playsinline autoplay muted loop onloadedmetadata="this.muted = true">
+                    <source src="/videos/video-1.mp4" type="video/mp4"/>
+                
+                </video>*/
       
       
     
@@ -47,10 +52,8 @@ function Home() {
             <section className="video">
               <div className="vidt">
                   <div className="left1">
-                  <video id = 'vid'className='picture14'playsinline autoplay muted loop onloadedmetadata="this.muted = true">
-                    <source src="/videos/video-1.mp4" type="video/mp4"/>
-                
-                </video>
+                  <iframe className='picture14' src="https://www.youtube.com/embed/tdhNpxyQLGo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  
                 
                     
 
